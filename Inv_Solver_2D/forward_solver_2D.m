@@ -6,13 +6,13 @@ function [field,density] = forward_solver_2D(N,GG,q,k,rhs)
 % where V is the volume potential.
 % input :
 %	N : number of points in the domain
-%	GG : NxNxN tensor with weights for the volume problem
-%	q : NxNxN tensor representing the sound profile of the domain
+%	GG : NxN tensor with weights for the volume problem
+%	q : NxN tensor representing the sound profile of the domain
 %	k : wavenumber fo the problem
-%	rhs : N^3 right-hand-side for the problem
+%	rhs : N^2 right-hand-side for the problem
 % output :
 %	field : scattered field us = V rho
-%	density: NxNxN tensor with density rho of the volume potential
+%	density: NxN tensor with density rho of the volume potential
 %%%This is out
 %	fwinfo : variable with information about the solution
 %		fwinfo(1) : time for the solution of the integral equation
